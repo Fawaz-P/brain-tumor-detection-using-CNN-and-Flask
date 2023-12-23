@@ -1,0 +1,56 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="static/tmp/style.css">
+    <nav class="navbar" role="navigation" id="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="/">
+                    Home
+                </a>
+
+                <a class="navbar-item" href="/upload">
+                    Predict 
+                </a>
+
+                
+            <div class="navbar-end">
+                
+            </div>
+        </div>
+    </nav>
+</head>
+
+<body>
+    <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+    <center>
+    <h1 class="title is-2" style="font-size: 5cqw; font-weight: bold;">Prediction Result</h1>
+    <div class="box" style="align-items: center; margin-top: 50px; padding: 2rem; width: max-content; height: max-content;">
+      
+      <br>
+      <div style="align-items: center;">
+        <img src="{{ image_path }}" alt="Result Image" style="max-width: 400px; max-height: 350px;">
+        <p style="font-size: 2rem;">{{ label }}</p>
+      </div>
+    </div>
+    <h3>Note:-Consult Doctor for confirmation</h3>
+    </center>
+    
+</body>
+<link rel="stylesheet" type="text/css" href="pw.css">
+<script src="https://kit.fontawesome.com/e690f7b4b8.js" crossorigin="anonymous"></script>
+<script type="module" src="pw.js"></script>
